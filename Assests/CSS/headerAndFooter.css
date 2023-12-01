@@ -1,0 +1,97 @@
+:root {
+  --color-light-black: #131921;
+}
+*, ::before, ::after{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+.displayNone{
+  display:none;
+}
+html{
+  font-size:16px;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+header, footer{
+  background-color: var(--color-light-black);
+  min-height: 2rem;
+}
+nav#primaryHeaderNavigation{  
+    background-color: var(--color-light-black);  
+    padding-bottom: 2rem;
+}
+header#pageHeader{
+  display: flex;
+  padding:2rem 0;
+  padding-bottom:1rem;
+  justify-content: center;
+  align-items: center;
+}
+footer#pageFooter{
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding:2rem 0;
+  gap:1rem;
+}
+nav#primaryHeaderNavigation ul,
+nav#footerNavigation ul{
+  list-style: none;
+  display: flex;
+  gap:1rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+nav#primaryHeaderNavigation ul li a,
+nav#footerNavigation ul li a{
+  color:white;
+  font-size: 1.5rem;
+}
+main{
+  min-height: 71vh;
+}
+
+.info{
+  color:orange;
+  text-align: center;
+  position: relative;
+  top: 5rem;  
+  font-size: 5rem;
+}
+
+/* Some Media Queries */
+@media screen and (max-width:900px){
+  nav#primaryHeaderNavigation ul li a,
+  nav#footerNavigation ul li a{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:650px){
+  nav#primaryHeaderNavigation ul,
+  nav#footerNavigation ul{
+    flex-direction: column;
+  }
+  nav#primaryHeaderNavigation ul li a,
+  nav#footerNavigation ul li a{
+    font-size: 1.3rem;
+  }
+  .info{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width:400px){
+  footer#pageFooter{
+    padding:5rem 5%;
+  }
+}
+
+/***
+ * This file is common to all pages, shared among all members and should be kept intact !
+ */
