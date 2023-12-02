@@ -29,6 +29,7 @@ header#pageHeader{
   padding-bottom:1rem;
   justify-content: center;
   align-items: center;
+  color:white;
 }
 footer#pageFooter{
   color:white;
@@ -63,6 +64,9 @@ main{
   position: relative;
   top: 5rem;  
   font-size: 5rem;
+}
+input[type=submit]::before{
+content:"hi";
 }
 
 /* Some Media Queries */
